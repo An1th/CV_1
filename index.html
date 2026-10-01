@@ -116,12 +116,9 @@
         ========================================================= */
 
         .intro {
+            width: calc(100% - 100px);
             max-width: 1050px;
 
-            /*
-             * Larger negative margin moves BOTH the photograph
-             * and the title card upward.
-             */
             margin: -200px auto 35px auto;
 
             position: relative;
@@ -134,7 +131,7 @@
 
             text-align: center;
 
-            padding: 0 25px;
+            padding: 0;
         }
 
 
@@ -157,9 +154,6 @@
 
             flex-shrink: 0;
 
-            /*
-             * Photo overlaps the white introduction card.
-             */
             margin-bottom: -38px;
 
             position: relative;
@@ -177,10 +171,6 @@
 
             background: rgba(255, 255, 255, 0.96);
 
-            /*
-             * Extra space at top prevents the name from
-             * getting too close to the overlapping photograph.
-             */
             padding: 58px 50px 35px 50px;
 
             border-radius: 10px;
@@ -414,6 +404,7 @@
 
         @media (max-width: 1100px) {
 
+            .intro,
             main {
                 width: calc(100% - 60px);
             }
@@ -442,13 +433,15 @@
             nav a {
                 margin: 4px 8px;
 
-                font-size: 12px;
+                font-size: 14px;
             }
 
             .intro {
+                width: calc(100% - 28px);
+
                 margin-top: -115px;
 
-                padding: 0 15px;
+                padding: 0;
             }
 
             .profile-photo {
@@ -522,18 +515,19 @@
                 height: 210px;
             }
 
+            .intro,
             main {
                 width: calc(100% - 18px);
-
-                padding-left: 18px;
-
-                padding-right: 18px;
             }
 
             .intro {
-                padding-left: 10px;
+                padding: 0;
+            }
 
-                padding-right: 10px;
+            main {
+                padding-left: 18px;
+
+                padding-right: 18px;
             }
 
             .intro-text {
@@ -898,6 +892,10 @@
             and energy-efficient solar lighting.
         </p>
 
+        <p class="advisor">
+            Advisor: Dr. S. Radhakrishnan
+        </p>
+
     </div>
 
 </section>
@@ -1113,13 +1111,9 @@
 
         <div class="entry-header">
 
-            <div class="entry-title">
-                National Scholarship · ANID, Chile
-            </div>
-
-            <div class="date">
-                2023 – 2025
-            </div>
+            <strong>
+                2023 – 2025 · National Scholarship · ANID, Chile
+            </strong>
 
         </div>
 
@@ -1135,14 +1129,10 @@
 
         <div class="entry-header">
 
-            <div class="entry-title">
-                Scientific Assistant · ESO Observing Programme
+            <strong>
+                2024 · Scientific Assistant · ESO Observing Programme
                 Committee (OPC), P115
-            </div>
-
-            <div class="date">
-                2024
-            </div>
+            </strong>
 
         </div>
 
@@ -1157,13 +1147,9 @@
 
         <div class="entry-header">
 
-            <div class="entry-title">
-                Social Media Manager · INCT-UDA
-            </div>
-
-            <div class="date">
-                2023 – 2024
-            </div>
+            <strong>
+                2023 - 2024 · Social Media Manager · INCT-UDA
+            </strong>
 
         </div>
 
@@ -1304,13 +1290,8 @@
         <div class="entry-header">
 
             <div class="entry-title">
-                Mentor · Ambitio
+                2026 - Present · Mentor · Ambitio
             </div>
-
-            <div class="date">
-                2026 – Present
-            </div>
-
         </div>
 
         <p>
@@ -1328,11 +1309,7 @@
         <div class="entry-header">
 
             <div class="entry-title">
-                Content Writer · Evoplus IT Services
-            </div>
-
-            <div class="date">
-                2018
+                2018 · Content Writer · Evoplus IT Services
             </div>
 
         </div>
@@ -1356,15 +1333,18 @@
 
 
     <div class="entry">
+
         <strong>2025 · SOCHIAS, Chile</strong>
 
         <p>
             Poster on TTV in the WASP-19 system.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>
             2025 · Journal Club, ESO, Garching bei München
         </strong>
@@ -1372,10 +1352,12 @@
         <p>
             Talk on WASP-107 b.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>
             2024 · Stellar and Planetary Group, ESO,
             Garching bei München
@@ -1384,6 +1366,7 @@
         <p>
             Research talk.
         </p>
+
     </div>
 
 
@@ -1403,6 +1386,7 @@
 
 
     <div class="entry">
+
         <strong>
             2024 · Exoplanets 5, Leiden, Netherlands
         </strong>
@@ -1410,6 +1394,7 @@
         <p>
             Poster presentation.
         </p>
+
     </div>
 
 
@@ -1443,6 +1428,7 @@
 
 
     <div class="entry">
+
         <strong>
             2023 · XVIII SOCHIAS Meeting, Chile
         </strong>
@@ -1450,6 +1436,7 @@
         <p>
             Paper presentation on WASP-19 b.
         </p>
+
     </div>
 
 
@@ -1468,6 +1455,7 @@
 
 
     <div class="entry">
+
         <strong>
             2022 · VLTI-HOW Workshop, ESO Vitacura, Chile
         </strong>
@@ -1475,6 +1463,7 @@
         <p>
             Poster and group presentations.
         </p>
+
     </div>
 
 
@@ -1752,4 +1741,5 @@
 
 
 </body>
+
 </html>
