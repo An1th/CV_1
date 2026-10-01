@@ -25,8 +25,21 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             color: #222;
-            background: #ffffff;
             line-height: 1.65;
+
+            /* Astronomy background visible around the CV */
+            background:
+                linear-gradient(
+                    rgba(4, 18, 32, 0.30),
+                    rgba(4, 18, 32, 0.30)
+                ),
+                url("images/bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #071827;
         }
 
         a {
@@ -40,7 +53,7 @@
 
 
         /* =========================================================
-           HERO BACKGROUND
+           HERO
         ========================================================= */
 
         .hero {
@@ -48,7 +61,7 @@
 
             background:
                 linear-gradient(
-                    rgba(0, 15, 30, 0.20),
+                    rgba(0, 15, 30, 0.15),
                     rgba(0, 15, 30, 0.35)
                 ),
                 url("images/bg.jpg");
@@ -75,7 +88,8 @@
 
             padding: 20px;
 
-            background: rgba(0, 0, 0, 0.30);
+            background: rgba(4, 18, 32, 0.72);
+            backdrop-filter: blur(5px);
         }
 
         nav a {
@@ -97,13 +111,14 @@
 
         .intro {
             max-width: 1050px;
-            margin: -105px auto 40px auto;
+            margin: -105px auto 35px auto;
 
             position: relative;
+            z-index: 5;
 
             display: flex;
             align-items: center;
-            gap: 45px;
+            gap: 40px;
 
             padding: 0 25px;
         }
@@ -118,37 +133,33 @@
             border: 7px solid white;
 
             box-shadow:
-                0 4px 18px rgba(0,0,0,0.25);
+                0 5px 25px rgba(0, 0, 0, 0.40);
 
             flex-shrink: 0;
         }
 
         .intro-text {
-            background: white;
+            background: rgba(255, 255, 255, 0.96);
 
-            padding: 28px 35px;
+            padding: 30px 38px;
 
-            border-radius: 5px;
+            border-radius: 8px;
 
             box-shadow:
-                0 3px 15px rgba(0,0,0,0.12);
+                0 5px 25px rgba(0, 0, 0, 0.22);
 
             flex: 1;
         }
 
         .intro-text h1 {
             margin: 0 0 5px 0;
-
             font-size: 34px;
-
             color: #102b40;
         }
 
         .intro-text .position {
             margin: 0 0 18px 0;
-
             color: #527083;
-
             font-size: 17px;
         }
 
@@ -168,19 +179,41 @@
 
 
         /* =========================================================
-           MAIN CONTENT
+           MAIN CENTRAL CV PANEL
         ========================================================= */
 
         main {
-            max-width: 1000px;
-            margin: auto;
+            width: calc(100% - 100px);
+            max-width: 1050px;
 
-            padding: 0 30px 70px 30px;
+            margin: 35px auto 70px auto;
+
+            padding: 35px 55px 65px 55px;
+
+            background: rgba(255, 255, 255, 0.96);
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 5px 30px rgba(0, 0, 0, 0.30);
         }
 
+
+        /* =========================================================
+           SECTIONS
+        ========================================================= */
+
         section {
-            margin: 55px 0;
+            margin: 45px 0;
             scroll-margin-top: 20px;
+        }
+
+        section:first-child {
+            margin-top: 5px;
+        }
+
+        section:last-child {
+            margin-bottom: 5px;
         }
 
         h2 {
@@ -192,19 +225,26 @@
 
             padding-bottom: 8px;
 
+            margin-top: 0;
             margin-bottom: 27px;
         }
 
         h3 {
             color: #173f5c;
 
+            margin-top: 10px;
             margin-bottom: 4px;
 
             font-size: 18px;
         }
 
+
+        /* =========================================================
+           ENTRIES
+        ========================================================= */
+
         .entry {
-            margin-bottom: 30px;
+            margin-bottom: 27px;
         }
 
         .entry-header {
@@ -278,7 +318,7 @@
         ========================================================= */
 
         footer {
-            background: #102b40;
+            background: rgba(7, 24, 39, 0.94);
 
             color: #e6eef3;
 
@@ -287,6 +327,26 @@
             padding: 30px;
 
             font-size: 14px;
+
+            box-shadow:
+                0 -3px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+
+        /* =========================================================
+           TABLET
+        ========================================================= */
+
+        @media (max-width: 1100px) {
+
+            main {
+                width: calc(100% - 60px);
+            }
+
         }
 
 
@@ -295,6 +355,10 @@
         ========================================================= */
 
         @media (max-width: 750px) {
+
+            body {
+                background-attachment: scroll;
+            }
 
             .hero {
                 height: 300px;
@@ -311,12 +375,13 @@
 
             .intro {
                 flex-direction: column;
-
                 text-align: center;
 
                 margin-top: -80px;
 
                 gap: 15px;
+
+                padding: 0 18px;
             }
 
             .profile-photo {
@@ -326,10 +391,35 @@
 
             .intro-text {
                 padding: 25px;
+                width: 100%;
             }
 
             .intro-text h1 {
                 font-size: 28px;
+            }
+
+            .contact-links a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+
+            main {
+                width: calc(100% - 28px);
+
+                margin-top: 25px;
+                margin-bottom: 40px;
+
+                padding: 30px 24px 45px 24px;
+
+                border-radius: 7px;
+            }
+
+            section {
+                margin: 40px 0;
+            }
+
+            h2 {
+                font-size: 23px;
             }
 
             .entry-header {
@@ -341,9 +431,33 @@
                 margin-top: 3px;
             }
 
+        }
+
+
+        /* =========================================================
+           VERY SMALL PHONES
+        ========================================================= */
+
+        @media (max-width: 450px) {
+
             main {
-                padding-left: 20px;
-                padding-right: 20px;
+                width: calc(100% - 18px);
+
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .intro {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .intro-text {
+                padding: 22px 18px;
+            }
+
+            .intro-text h1 {
+                font-size: 25px;
             }
 
         }
@@ -430,19 +544,22 @@
 
             <a
                 href="https://www.linkedin.com/in/anitha-raj-0107astro"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
                 LinkedIn
             </a>
 
             <a
                 href="https://orcid.org/0000-0002-3559-3251"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
                 ORCID
             </a>
 
             <a
                 href="https://stardustwavess.wordpress.com"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
                 StardustWaves
             </a>
 
@@ -633,7 +750,6 @@
     </div>
 
 
-
     <div class="entry">
 
         <div class="entry-header">
@@ -672,7 +788,6 @@
         </p>
 
     </div>
-
 
 
     <div class="entry">
@@ -853,7 +968,8 @@
 
         <a
             href="https://doi.org/10.1051/0004-6361/202556822"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             DOI: 10.1051/0004-6361/202556822
         </a>
 
@@ -880,7 +996,8 @@
 
         <a
             href="https://doi.org/10.1093/mnras/stag552"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             DOI: 10.1093/mnras/stag552
         </a>
 
@@ -900,39 +1017,53 @@
 
 
     <div class="entry">
+
         <div class="entry-header">
+
             <div class="entry-title">
                 National Scholarship · ANID, Chile
             </div>
+
             <div class="date">2023 – 2025</div>
+
         </div>
 
         <p>
             Doctoral scholarship awarded by Chile's National
             Agency for Research and Development.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <div class="entry-header">
+
             <div class="entry-title">
                 Scientific Assistant · ESO Observing Programme
                 Committee (OPC), P115
             </div>
+
             <div class="date">2024</div>
+
         </div>
 
         <p>Served on three review panels.</p>
+
     </div>
 
 
     <div class="entry">
+
         <div class="entry-header">
+
             <div class="entry-title">
                 Social Media Manager · INCT-UDA
             </div>
+
             <div class="date">2023 – 2024</div>
+
         </div>
 
         <p>
@@ -940,76 +1071,101 @@
             highlighting and communicating the institute's
             achievements.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2023 · Adelina Gutiérrez Beca</strong>
+
         <p>
             CLP 310,000 travel support to attend the XVII Latin
             American Regional IAU Meeting in Uruguay.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2023 · IAU Grant</strong>
+
         <p>
             EUR 1,200 grant to participate in Complex Planetary
             Systems II, IAU Symposium 382, Belgium.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2023 · EAS Travel Grant</strong>
+
         <p>
             EUR 700 travel grant to attend the European
             Astronomical Society Meeting in Poland.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2023 · Sagan Workshop Grant</strong>
+
         <p>
             USD 1,200 accommodation grant to attend the Sagan
             Exoplanet Summer Workshop in California, USA.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2021 – Present · Rubin Observatory Data Preview Delegate</strong>
+
         <p>
             Data Preview 0 (DP0) delegate for the Vera C. Rubin
             Observatory in Chile.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2021 – Present · JWST Transiting Exoplanet Community</strong>
+
         <p>
             Member of the James Webb Space Telescope Transiting
             Exoplanet Community Early Release Science Programme.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2020 · Shortlisted Candidate, IMPRS-HD</strong>
+
         <p>
             Shortlisted for the International Max Planck Research
             School for Astronomy and Cosmic Physics at Heidelberg
             University.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2017 · Sir C. V. Raman Award</strong>
+
         <p>Award for overall academic performance.</p>
+
     </div>
 
 </section>
@@ -1101,11 +1257,16 @@
 
 
     <div class="entry">
-        <strong>2024 · XXXII IAU General Assembly, Cape Town, South Africa</strong>
+
+        <strong>
+            2024 · XXXII IAU General Assembly, Cape Town, South Africa
+        </strong>
+
         <p>
             Poster presentation; volunteer for the ESO and
             Astronomical Society of India booths.
         </p>
+
     </div>
 
 
@@ -1116,20 +1277,28 @@
 
 
     <div class="entry">
+
         <strong>2024 · ICPEH 2024, Ahmedabad, India</strong>
+
         <p>
             Talk on the orbital decay of WASP-19 b and a poster
             on astrobiology.
         </p>
+
     </div>
 
 
     <div class="entry">
-        <strong>2023 · Sagan Exoplanet Summer Workshop, California, USA</strong>
+
+        <strong>
+            2023 · Sagan Exoplanet Summer Workshop, California, USA
+        </strong>
+
         <p>
             Poster presentation and helper for a hands-on session
             on petitRADTRANS retrievals.
         </p>
+
     </div>
 
 
@@ -1140,11 +1309,14 @@
 
 
     <div class="entry">
+
         <strong>2023 · 41st ASI Meeting, India</strong>
+
         <p>
             Paper presentation on clouds and hazes in inflated
             hot Jupiters.
         </p>
+
     </div>
 
 
@@ -1155,20 +1327,26 @@
 
 
     <div class="entry">
+
         <strong>2018 · International Capsule Workshop: Life in Space</strong>
+
         <p>
             Participated in a workshop organised by the Indian
             Astrobiology Research Centre.
         </p>
+
     </div>
 
 
     <div class="entry">
+
         <strong>2016 · World Space Week</strong>
+
         <p>
             Participated in the programme organised by Satish
             Dhawan Space Centre SHAR, India.
         </p>
+
     </div>
 
 </section>
@@ -1291,9 +1469,10 @@
 
         <strong>
             2025 ·
-            <a href="https://studyinternational.com/news/day-in-the-life-phd-in-astronomy-chile/"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://studyinternational.com/news/day-in-the-life-phd-in-astronomy-chile/"
+                target="_blank"
+                rel="noopener noreferrer">
                 A Day in the Life of a PhD in Astronomy Student in the Best Country to Pursue This Subject
             </a>
         </strong>
@@ -1305,9 +1484,10 @@
 
         <strong>
             2025 ·
-            <a href="https://studyinternational.com/news/astronomy-degree-phd-anitha-raj/"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://studyinternational.com/news/astronomy-degree-phd-anitha-raj/"
+                target="_blank"
+                rel="noopener noreferrer">
                 The Best Country to Earn an Astronomy Degree Is Not What You'd Expect
             </a>
         </strong>
@@ -1319,9 +1499,10 @@
 
         <strong>
             2021 ·
-            <a href="https://www.youtube.com/watch?v=XYxGCoyvsU0&t=2s"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://www.youtube.com/watch?v=XYxGCoyvsU0&t=2s"
+                target="_blank"
+                rel="noopener noreferrer">
                 Women in Science · PAR Explora Atacama
             </a>
         </strong>
@@ -1329,6 +1510,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =============================================================
@@ -1342,33 +1524,19 @@
     <div class="skills">
 
         <span>Python</span>
-
         <span>Astropy</span>
-
         <span>NumPy</span>
-
         <span>Pandas</span>
-
         <span>Lightkurve</span>
-
         <span>emcee</span>
-
         <span>MATLAB</span>
-
         <span>IDL</span>
-
         <span>LaTeX</span>
-
         <span>TOPCAT</span>
-
         <span>JWST Pipelines</span>
-
         <span>Bayesian Retrievals</span>
-
         <span>Photometry</span>
-
         <span>Machine Learning</span>
-
         <span>Nonlinear Time-Series Analysis</span>
 
     </div>
@@ -1388,9 +1556,7 @@
     <div class="skills">
 
         <span>English</span>
-
         <span>Tamil</span>
-
         <span>Spanish</span>
 
     </div>
@@ -1420,5 +1586,4 @@
 
 
 </body>
-
 </html>
