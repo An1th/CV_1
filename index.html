@@ -1,450 +1,1424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anitha Raj Rajkumar | CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #222;
-      line-height: 1.6;
-    }
+    <title>Dr. Anitha Raj Rajkumar | Astronomy</title>
 
-    header {
-      background: #0b1f33;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
+    <style>
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+        /* =========================================================
+           GENERAL
+        ========================================================= */
 
-    header p {
-      margin: 8px 0;
-      font-size: 1.1rem;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    header a {
-      color: #cce6ff;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    nav {
-      background: #132f4c;
-      padding: 12px;
-      text-align: center;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #ffffff;
+            line-height: 1.65;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
+        a {
+            color: #245f86;
+            text-decoration: none;
+        }
 
-    section {
-      max-width: 1000px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    h2 {
-      color: #0b1f33;
-      border-bottom: 2px solid #0b1f33;
-      padding-bottom: 8px;
-    }
 
-    h3 {
-      color: #132f4c;
-      margin-bottom: 5px;
-    }
+        /* =========================================================
+           HERO BACKGROUND
+        ========================================================= */
 
-    .item {
-      margin-bottom: 28px;
-    }
+        .hero {
+            height: 390px;
 
-    .date {
-      font-weight: bold;
-      color: #555;
-    }
+            background:
+                linear-gradient(
+                    rgba(0, 15, 30, 0.20),
+                    rgba(0, 15, 30, 0.35)
+                ),
+                url("images/bg.jpg");
 
-    ul {
-      padding-left: 22px;
-    }
+            background-size: cover;
+            background-position: center;
 
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+            position: relative;
+        }
 
-    .skills span {
-      background: #e8eef5;
-      padding: 8px 12px;
-      border-radius: 20px;
-    }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #0b1f33;
-      color: white;
-      margin-top: 40px;
-    }
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
 
-    a {
-      color: #0b5cad;
-    }
-  </style>
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            padding: 20px;
+
+            background: rgba(0, 0, 0, 0.30);
+        }
+
+        nav a {
+            color: white;
+            margin: 5px 16px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c8e6ff;
+            text-decoration: none;
+        }
+
+
+        /* =========================================================
+           INTRODUCTION
+        ========================================================= */
+
+        .intro {
+            max-width: 1050px;
+            margin: -105px auto 40px auto;
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            gap: 45px;
+
+            padding: 0 25px;
+        }
+
+        .profile-photo {
+            width: 230px;
+            height: 230px;
+
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 7px solid white;
+
+            box-shadow:
+                0 4px 18px rgba(0,0,0,0.25);
+
+            flex-shrink: 0;
+        }
+
+        .intro-text {
+            background: white;
+
+            padding: 28px 35px;
+
+            border-radius: 5px;
+
+            box-shadow:
+                0 3px 15px rgba(0,0,0,0.12);
+
+            flex: 1;
+        }
+
+        .intro-text h1 {
+            margin: 0 0 5px 0;
+
+            font-size: 34px;
+
+            color: #102b40;
+        }
+
+        .intro-text .position {
+            margin: 0 0 18px 0;
+
+            color: #527083;
+
+            font-size: 17px;
+        }
+
+        .intro-text p {
+            margin-bottom: 14px;
+        }
+
+        .contact-links {
+            margin-top: 17px;
+            font-size: 15px;
+        }
+
+        .contact-links a {
+            margin-right: 14px;
+            font-weight: bold;
+        }
+
+
+        /* =========================================================
+           MAIN CONTENT
+        ========================================================= */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+
+            padding: 0 30px 70px 30px;
+        }
+
+        section {
+            margin: 55px 0;
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            color: #102b40;
+
+            font-size: 26px;
+
+            border-bottom: 2px solid #b8c9d5;
+
+            padding-bottom: 8px;
+
+            margin-bottom: 27px;
+        }
+
+        h3 {
+            color: #173f5c;
+
+            margin-bottom: 4px;
+
+            font-size: 18px;
+        }
+
+        .entry {
+            margin-bottom: 30px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+
+            align-items: flex-start;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            color: #173f5c;
+        }
+
+        .date {
+            color: #666;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .entry p {
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+
+        .advisor {
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+
+
+        /* =========================================================
+           SKILLS
+        ========================================================= */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #eef3f6;
+
+            border-radius: 20px;
+
+            padding: 8px 14px;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           PUBLICATIONS
+        ========================================================= */
+
+        .publication {
+            margin-bottom: 24px;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            color: #173f5c;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #102b40;
+
+            color: #e6eef3;
+
+            text-align: center;
+
+            padding: 30px;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 750px) {
+
+            .hero {
+                height: 300px;
+            }
+
+            nav {
+                padding: 12px;
+            }
+
+            nav a {
+                margin: 4px 8px;
+                font-size: 12px;
+            }
+
+            .intro {
+                flex-direction: column;
+
+                text-align: center;
+
+                margin-top: -80px;
+
+                gap: 15px;
+            }
+
+            .profile-photo {
+                width: 190px;
+                height: 190px;
+            }
+
+            .intro-text {
+                padding: 25px;
+            }
+
+            .intro-text h1 {
+                font-size: 28px;
+            }
+
+            .entry-header {
+                display: block;
+            }
+
+            .date {
+                display: block;
+                margin-top: 3px;
+            }
+
+            main {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-<header>
-  <h1>Dr. Anitha Rajkumar</h1>
-  <p>PhD in Astronomy | Exoplanet Atmospheres | Transmission Spectroscopy</p>
-  <p>Universidad de Atacama, Copiapó, Chile</p>
-  <p>Email: <a href="mailto:anitha.raj.21@alumnos.uda.cl">anitha.raj.21@alumnos.uda.cl</a></p>
-  <p>
-    <a href="https://www.linkedin.com/in/anitha-raj-0107astro" target="_blank">LinkedIn</a> |
-    <a href="https://stardustwavess.wordpress.com" target="_blank">Blog: Stardustwaves</a>
-  </p>
-</header>
 
-<nav>
-  <a href="#summary">Summary</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#current work">Current Work</a>
-  <a href="#thesis">PhD Thesis</a>
-  <a href="#publications">Publications</a>
-  <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
-  <a href="#conferences">Conferences</a>
-  <a href="#outreach">Outreach Activities</a>
-  <a href="#achievements">Achievements</a>
-</nav>
+<!-- =============================================================
+     HERO
+============================================================= -->
 
-<section id="summary">
-  <h2>Summary</h2>
-  <p>
-    I am establishing my career in a pragmatic way in an organization where I can thrive in a challenging
-    environment, learn quickly, and strengthen my understanding of scientific concepts in a structured and
-    well-mannered way.
-  </p>
-</section>
+<div class="hero">
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Python: Astropy, NumPy, Pandas</span>
-    <span>MATLAB</span>
-    <span>Machine Learning</span>
-    <span>Introduction to Neural Networks</span>
-    <span>LaTeX</span>
-    <span>TOPCAT</span>
-    <span>IDL</span>
-    <span>JWST Pipelines</span>
-  </div>
-</section>
+    <nav>
 
-<section id="education">
-  <h2>Education</h2>
+        <a href="#research">Research</a>
 
-  <div class="item">
-    <h3>Universidad de Atacama, Copiapó, Chile (2021 - 2026)</h3>
-    <p>PhD Thesis | Grade: 6.5 / 7</p>
-  </div>
+        <a href="#education">Education</a>
 
-  <div class="item">
-    <h3>D.G. Vaishnav College, Tamil Nadu, India (2017 - 2019)</h3>
-    <p>M.Sc. Physics | CGPA: 8.6</p>
-  </div>
+        <a href="#experience">Experience</a>
 
-  <div class="item">
-    <h3>Dr. MGR University, Tamil Nadu, India (2014 - 2017)</h3>
-    <p>B.Sc. Physics | CGPA: 8.9</p>
-  </div>
-</section>
+        <a href="#publications">Publications</a>
 
-<section id="current work">
-  <h2>Current Work</h2>
-  <h3>Exploring stellar astrophysics with VVVX data and non-linear data science methods</h3>
-I am currently a researcher on a GEMINI–ANID funded project (PROYECTO: 32240028) at the 
-Universidad de Atacama, Chile, contributing to the VVVX Survey. My work focuses on 
-developing advanced computational techniques, combining nonlinear time-series analysis, 
-machine learning, and statistical methods to improve the detection and characterization of 
-exoplanets and variable astrophysical sources in large astronomical datasets.
-</section>
+        <a href="#awards">Awards</a>
+
+        <a href="#conferences">Conferences</a>
+
+        <a href="#outreach">Outreach</a>
+
+        <a href="#skills">Skills</a>
+
+    </nav>
+
+</div>
 
 
-<section id="thesis">
-  <h2>PhD Thesis</h2>
-  <h3>Probing Clouds and Hazes in Hot-Jupiter Atmospheres from NUV–MIR</h3>
-PhD thesis focused on the atmospheric and dynamical characterization of transiting exoplanets, particularly hot-Jupiters, 
-using multi-wavelength transmission spectroscopy from optical to mid-infrared wavelengths. Combined ground- and 
-space-based observations from facilities including HST, JWST, VLT, Gemini, and TESS to investigate atmospheric 
-chemistry, clouds, hazes, and disequilibrium processes such as vertical mixing and photochemistry. Developed and 
-applied forward modeling and Bayesian atmospheric retrieval techniques using POSEIDON to constrain molecular 
-abundances, thermal structures, and aerosol properties of exoplanetary atmospheres
-</section>
 
-<section id="publications">
-  <h2>Publications</h2>
-  <ul>
-    <li>Long-Term Monitoring of WASP-19b: Signs of Apsidal Precession and Molecular Signatures <a href="https://ui.adsabs.harvard.edu/abs/2026A%26A...708A.313R/abstract" target="_blank">(Link)</a></li>
-    <li>Brightness evolution of LEO Starlink mega-constellation satellites from 2021 to 2023: A multi-year ground-based photometric study <a href="https://academic.oup.com/mnras/article/548/2/stag552/8540255" target="_blank">(Link)</a></li>
-  </ul>
-</section>
+<!-- =============================================================
+     PROFILE + SUMMARY
+============================================================= -->
 
-<section id="projects">
-  <h2>Projects</h2>
+<div class="intro">
 
-  <div class="item">
-    <h3>PhD Course Work – Extra-Solar Planets : </h3>
-    <p class="date">September 2022 – January 2023 | Universidad de Atacama, Copiapó, Chile</p>
-    <p><strong>Report Title:</strong> Comparing the Photometric Parameters of the TESS Targets with its Literature Papers</p>
-    <p>
-      Used the Python package Lightkurve to generate light curves of TESS targets. A model curve was fitted
-      using the JKTEBOP code by performing 10,000 Monte Carlo simulations. The final parametric values were
-      obtained through MCMC analysis and compared with values reported in the literature.
-    </p>
-  </div>
+    <img
+        src="images/Anitha_2026.jpeg"
+        alt="Dr. Anitha Raj Rajkumar"
+        class="profile-photo"
+    >
 
-  <div class="item">
-    <h3>PhD Course Work – Astrobiology</h3>
-    <p class="date">September 2022 – January 2023 | Universidad de Atacama, Copiapó, Chile</p>
-    <p><strong>Report Title:</strong> Influence of Precipitation in Desierto Florido</p>
-    <p>
-      Prepared a detailed study of vegetation in Desierto Florido and examined the influence of precipitation
-      on its development. The work was carried out using EO Browser Sentinel Hub and MODIS-NDVI data.
-    </p>
-  </div>
+    <div class="intro-text">
 
-  <div class="item">
-    <h3>PhD Course Work – Scientific Writing</h3>
-    <p class="date">April 2022 – June 2022 | Universidad de Atacama, Copiapó, Chile</p>
-    <p><strong>Report Title:</strong> Outlier Quiescent Galaxies with Less Hα Emission</p>
-    <p>
-      Studied three galaxy clusters, A1914, A963, and RXJ1720, at redshifts 0.15 ≤ z ≤ 0.2 using data from
-      the Arizona Cluster Redshift Survey. The project examined the spatial distribution of star-forming
-      galaxies and investigated how stellar mass varies with Dn4000, Hα emission, specific star-formation
-      rate, and stellar mass indicators. The report highlighted young galaxies with high star-formation rates
-      within the studied clusters.
-    </p>
-  </div>
+        <h1>Dr. Anitha Raj Rajkumar</h1>
 
-  <div class="item">
-    <h3>PhD Course Work – Astrophysics of the Galaxy</h3>
-    <p class="date">April 2022 – June 2022 | Universidad de Atacama, Copiapó, Chile</p>
-    <p><strong>Report Title:</strong> Bimodality Distribution of the Galaxies</p>
-    <p>
-      Investigated the bimodality of early- and late-type galaxies using parameters from the Sloan Digital
-      Sky Survey Data Release 8. The project discussed the bimodality of color distribution, Sérsic index,
-      star-formation rate, stellar mass, and absolute magnitude in the r-band. Contour plots were produced
-      to distinguish early- and late-type galaxy populations.
-    </p>
-  </div>
+        <p class="position">
+            Postdoctoral Researcher · Universidad de Atacama, Chile
+        </p>
 
-  <div class="item">
-    <h3>M.Sc. Final Year Project</h3>
-    <p class="date">November 2018 – January 2019 | Osmania University, Hyderabad, India</p>
-    <p><strong>Title:</strong> Long-Term Study of Meteor Count Rate and Meteor Echo Detection Height During Solar Cycle 23 & 24</p>
-    <p>
-      Used SKiYMET Meteor Radar data to study meteor occurrence, velocity, location, meteor echo height
-      variation, solar radio flux at F10.7, and Mg II during solar cycles 23 and 24. MATLAB was used to
-      generate the results. The project also investigated maximum meteor ablation height, meteor shower
-      periodicity, and variations in meteor activity with Sun Spot Number during each year.
-    </p>
-  </div>
-</section>
+        <p>
+            I specialise in exoplanet atmospheres, transit photometry,
+            and astronomical time-series analysis. My research combines
+            multi-wavelength observations from ground- and space-based
+            facilities with forward modelling, Bayesian atmospheric
+            retrievals, nonlinear methods, machine learning, and
+            statistical analysis.
+        </p>
 
-<section id="experience">
-  <h2>Field Experience</h2>
+        <p>
+            I am particularly interested in clouds, hazes,
+            disequilibrium chemistry, stellar activity, and the
+            detection and characterisation of exoplanets and variable
+            stars in large astronomical surveys.
+        </p>
 
-  <div class="item">
-    <h3>ESO’s La Silla Observatory: The Danish Telescope</h3>
-    <p class="date">May 2022 – September 2022 | MINDSTEp, La Silla, Chile</p>
-    <p>
-      Performed observations using Danish Telescope focused on microlensing search and characterization of
-      exoplanets as part of the international MINDSTEp collaboration: Microlensing Network for the Detection
-      of Small Terrestrial Exoplanets. Completed 22 nights of both remote and on-site observations at
-      La Silla Observatory.
-    </p>
-  </div>
+        <div class="contact-links">
 
-  <div class="item">
-    <h3>Japal-Rangapur Observatory</h3>
-    <p class="date">12 July 2019 | Hyderabad, Telangana, India</p>
-    <ul>
-      <li>Participated in a field trip to JRO conducted by Osmania University.</li>
-      <li>Observed Jupiter and the craters of the Moon using an 8-inch telescope.</li>
-    </ul>
-  </div>
-</section>
+            <a href="mailto:anitha.raj.21@alumnos.uda.cl">
+                Email
+            </a>
 
-<section id="conferences">
-  <h2>Conferences Attended</h2>
+            <a
+                href="https://www.linkedin.com/in/anitha-raj-0107astro"
+                target="_blank">
+                LinkedIn
+            </a>
 
-  <div class="item">
-    <h3>XXXII IAU General Assembly</h3>
-    <p class="date">August 6–15, 2024 | Cape Town, South Africa</p>
-    <p>
-      Presented a poster during the IAU393 session. Also volunteered for the ESO booth and the
-      Astronomical Society of India booth.
-    </p>
-  </div>
+            <a
+                href="https://orcid.org/0000-0002-3559-3251"
+                target="_blank">
+                ORCID
+            </a>
 
-  <div class="item">
-    <h3>Exoplanets 5</h3>
-    <p class="date">June 26–21, 2024 | Leiden, Netherlands</p>
-    <p>Presented a poster on Ultra-hot Jupiter: WASP-19 b during the conference.</p>
-  </div>
+            <a
+                href="https://stardustwavess.wordpress.com"
+                target="_blank">
+                StardustWaves
+            </a>
 
-  <div class="item">
-    <h3>International Conference on Planets, Exoplanets, and Habitability</h3>
-    <p class="date">February 5–9, 2024 | Ahmedabad, India</p>
-    <p>
-      Participated in person and presented a talk on the orbital decay study of WASP-19 b, along with
-      a poster on astrobiology.
-    </p>
-  </div>
-
-  <div class="item">
-    <h3>2023 Sagan Exoplanet Summer Workshop: Characterizing Exoplanetary Atmospheres — The Next Twenty Years</h3>
-    <p class="date">July 24–28, 2023 | NExScI, Caltech, Pasadena</p>
-    <p>
-      Participated in person and presented a poster. Also served as a helper for the hands-on session IV:
-      Retrievals using petitRADTRANS.
-    </p>
-  </div>
-
-  <div class="item">
-    <h3>European Astronomical Society Annual Meeting</h3>
-    <p class="date">July 10–14, 2023 | Krakow, Poland</p>
-    <p>Participated in person and gave a poster presentation.</p>
-  </div>
-
-  <div class="item">
-    <h3>Complex Planetary Systems II – Kavli-IAU Symposium 382</h3>
-    <p class="date">July 3–7, 2023 | Namur, Belgium</p>
-    <p>Participated in person and gave a poster presentation during the symposium.</p>
-  </div>
-
-  <div class="item">
-    <h3>Planetary Systems and the Origin of Life in the Era of JWST</h3>
-    <p class="date">May 16–19, 2023 | STScI, Baltimore, Maryland</p>
-    <p>Participated in person and gave a poster presentation during the symposium.</p>
-  </div>
-
-  <div class="item">
-    <h3>XVIII SOCHIAS Meeting</h3>
-    <p class="date">March 13–16, 2023 | Universidad de la Frontera, Chile</p>
-    <p>
-      Participated in person and gave a paper presentation on
-      “A comprehensive homogeneous investigation of orbital ephemeris and transmission spectrum of WASP-19 b.”
-    </p>
-  </div>
-
-  <div class="item">
-    <h3>41st Meeting of the Astronomical Society of India</h3>
-    <p class="date">February 1–5, 2023 | IIT Indore, India</p>
-    <p>
-      Participated in person and gave a paper presentation on
-      “Probing clouds and hazes of inflated hot-Jupiter atmospheres.”
-    </p>
-  </div>
-
-  <div class="item">
-    <h3>VLTI-HOW: The VLTI High Angular Resolution Observations Workshop</h3>
-    <p class="date">October 10–21, 2022 | ESO, Vitacura, Chile</p>
-    <p>
-      Participated in person and gave a poster presentation. Also gave a group presentation titled
-      “GRAVITY on Beta Pic b.”
-    </p>
-  </div>
-
-  <div class="item">
-    <h3>Rencontres Exobiologiques pour Doctorants</h3>
-    <p class="date">June 21–25, 2021 | France</p>
-    <p>Participated virtually in the RED’21 Astrobiology Introductory Course.</p>
-  </div>
-</section>
-
-<section id="outreach">
-  <h2> Outreach Activities </h2>
-
-    <div class="item">
-    <h3>Science Communicator</h3>
-    <p class="date">Stardustwaves (2016 - Present)</p>
-    <p>
-Published 60+ articles explaining astronomy, planetary science, and environmental topics for general 
-audiences.
-
-    </p>
-  </div>
-
-    <div class="item">
-    <h3>Public Outreach</h3>
-    <p class="date">Observatario Andromeda | Chile (2023)</p>
-    <p>
-Led public telescope nights and astronomy sessions; delivered science storytelling for school groups and 
-families. Featured in a local newspaper "Diario".
-    </p>
-  </div>
+        </div>
 
     </div>
 
-    <div class="item">
-    <h3>Guest STEM Speaker</h3>
-    <p class="date">Dr. MGR University | Chennai (June 2025)</p>
-    <p>
-Presented research talk on the topic Exoplanets and Habitability to undergraduate and master’s students during annual visits; motivated students to 
-pursue STEM careers.
-    </p>
-  </div>
+</div>
 
-    <div class="item">
-    <h3>Interviews given</h3>
-    <ul>
-      <li> A day in the life of a PhD in Astronomy student in the best country to pursue this subject <a href="https://studyinternational.com/news/day-in-the-life-phd-in-astronomy-chile/" target="_blank">(Link)</a>
-      <li> The best country to earn an astronomy degree is not what you’d expect <a href="https://studyinternational.com/news/astronomy-degree-phd-anitha-raj/" target="_blank">(Link)</a>
-      <li> Interviewed on the topic "Women in Science" conducted by PAR Explora Atacama <a href="https://www.youtube.com/watch?v=XYxGCoyvsU0&t=2s" target="_blank">(Link)</a> 
-    </ul>
-  </div>
+
+
+<main>
+
+
+<!-- =============================================================
+     CURRENT RESEARCH
+============================================================= -->
+
+<section id="research">
+
+    <h2>Current Research</h2>
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                Postdoctoral Researcher · Universidad de Atacama,
+                Copiapó, Chile
+            </div>
+
+            <div class="date">
+                2026 – Present
+            </div>
+
+        </div>
+
+        <h3>
+            Exploring Stellar Astrophysics with VVVX Data and
+            Non-linear Data Science Methods
+        </h3>
+
+        <p>
+            GEMINI–ANID Project · Código GEMINI 32240028
+        </p>
+
+        <p>
+            Developing nonlinear methods for identifying exoplanets,
+            flares in young stellar objects (YSOs), rare variables,
+            eclipsing binaries, and brown or ultracool dwarfs using
+            infrared survey data, nonlinear time-series analysis,
+            machine learning, and statistical techniques.
+        </p>
+
+        <p class="advisor">
+            Advisor: Dr. Carlos Ferreira Lopes
+        </p>
+
+    </div>
+
 </section>
 
-<section id="achievements">
-  <h2>Activities and Achievements</h2>
-  <ul>
-    <li>National Scholarship, ANID, Chile (PROYECTO : 21231937) (2023 - 2025).</li>
-    <li>Received the Adelina Gutiérrez grant of 310,000 Chilean pesos to attend XVII LARIM 2023 in Uruguay.</li>
-    <li>Received an IAU grant of 1200 EUR to participate in CPS II Symposium, IAU S382, in Belgium.</li>
-    <li>Received an EAS travel grant of 700 EUR to participate in the EAS 2023 meeting in Poland.</li>
-    <li>Received a grant of 1200 USD to cover lodging expenses for the 2023 Sagan Workshop in California.</li>
-    <li>Received the Sir C. V. Raman Award for overall academic performance in 2017.</li>
-    <li>Participated in astronomy outreach on “Women in Science,” organized by PAR Explora Atacama, Copiapó, Chile, in 2021.</li>
-    <li>Member of the JWST Transiting Exoplanet Community Early Release Science Program.</li>
-    <li>Data Preview (DP0) Delegate in Rubin Observatory LSST since April 2021.</li>
-    <li>Short-listed candidate for IMPRS-HD, Heidelberg, for PhD in Astronomy and Cosmic Physics, January 2020.</li>
-    <li>Blog writer at Stardustwaves since 2016.</li>
-    <li>Participated in World Space Week organized by Satish Dhawan Space Centre SHAR, October 2016.</li>
-    <li>Participated in the 1st International Capsule Workshop, “Life in Space,” conducted by the Indian Astrobiology Research Centre, March 2018.</li>
-  </ul>
+
+
+<!-- =============================================================
+     EDUCATION
+============================================================= -->
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                PhD in Astronomy · Universidad de Atacama,
+                Copiapó, Chile
+            </div>
+
+            <div class="date">
+                2021 – 2026
+            </div>
+
+        </div>
+
+        <p>Final grade: 6.5 / 7</p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                M.Sc. in Physics · DG Vaishnav College,
+                Chennai, India
+            </div>
+
+            <div class="date">
+                2017 – 2019
+            </div>
+
+        </div>
+
+        <p>Final grade: 8.6 CGPA</p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                B.Sc. in Physics · Dr. M.G.R. Educational and
+                Research Institute, India
+            </div>
+
+            <div class="date">
+                2014 – 2017
+            </div>
+
+        </div>
+
+        <p>Final grade: 8.9 CGPA</p>
+
+    </div>
+
 </section>
+
+
+
+<!-- =============================================================
+     RESEARCH EXPERIENCE
+============================================================= -->
+
+<section id="experience">
+
+    <h2>Research Experience</h2>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                PhD Thesis
+            </div>
+
+            <div class="date">
+                2021 – 2026
+            </div>
+
+        </div>
+
+        <h3>
+            Probing Clouds and Hazes in Hot-Jupiter Atmospheres
+            from NUV–MIR
+        </h3>
+
+        <p>
+            Investigated the atmospheric properties of hot and
+            ultra-hot Jupiters using multi-wavelength observations
+            from the near-ultraviolet to the mid-infrared, combining
+            data from HST, JWST, VLT, Gemini, TESS, and ground-based
+            facilities.
+        </p>
+
+        <p>
+            Applied forward modelling, Bayesian atmospheric retrievals,
+            and photochemical models to constrain molecular abundances,
+            clouds, hazes, thermal structures, and disequilibrium
+            chemistry. The thesis also examined transit-timing
+            variations and orbital evolution, investigating how
+            atmospheric composition and planetary properties are
+            influenced by gravity, irradiation, aerosols, and
+            chemical processes.
+        </p>
+
+        <p class="advisor">
+            Advisors: Dr. Carlos Ferreira Lopes,
+            Dr. Amelia Bayo and Dr. Jeremy Tregloan-Reed
+        </p>
+
+    </div>
+
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                M.Sc. Thesis
+            </div>
+
+            <div class="date">
+                2018 – 2019
+            </div>
+
+        </div>
+
+        <h3>
+            Long-Term Study of Meteor Count Rate and Meteor Echo
+            Detection Height During Solar Cycles 23 and 24
+        </h3>
+
+        <p>
+            Analysed meteor radar observations from Thumba, India,
+            to study meteor occurrence rates, echo-height variations,
+            and ablation altitudes across Solar Cycles 23 and 24.
+        </p>
+
+        <p>
+            Examined correlations between meteor activity, sunspot
+            number, solar radio flux at 10.7 cm (F10.7), and Mg II
+            indices, while also investigating annual meteor-shower
+            periodicity and atmospheric conditions in the Mesosphere
+            and Lower Thermosphere region.
+        </p>
+
+        <p class="advisor">
+            Advisors: Dr. Chenna Reddy and Dr. C. Ramathilagam
+        </p>
+
+    </div>
+
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                B.Sc. Project · Home Automation
+            </div>
+
+            <div class="date">
+                2016 – 2017
+            </div>
+
+        </div>
+
+        <p>
+            Developed an Arduino-based home automation system for
+            remotely controlling electrical appliances. The project
+            explored automated lighting, appliance control,
+            street-light intensity regulation, obstacle detection,
+            and energy-efficient solar lighting.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     OBSERVING EXPERIENCE
+============================================================= -->
+
+<section>
+
+    <h2>Observing Experience & Proposals</h2>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                ESO P113
+            </div>
+
+            <div class="date">2024</div>
+
+        </div>
+
+        <p>
+            Proposal awarded 4.5 hours of Gemini-GMOS observing
+            time to investigate hot-Jupiter atmospheres.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                ESO P112
+            </div>
+
+            <div class="date">2023</div>
+
+        </div>
+
+        <p>
+            Proposal awarded 4.5 hours of Gemini-GMOS observing
+            time to investigate hot-Jupiter atmospheres.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                ESO Proposal Writing School
+            </div>
+
+            <div class="date">2023</div>
+
+        </div>
+
+        <p>
+            Participated in the European Southern Observatory's
+            online Proposal Writing School, receiving training in
+            preparing and submitting observing proposals, the
+            proposal evaluation and review process, and the
+            principles of critically reviewing scientific proposals.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                Observational Researcher · MiNDSTEp,
+                ESO La Silla Observatory, Chile
+            </div>
+
+            <div class="date">2022</div>
+
+        </div>
+
+        <p>
+            Participated in Danish Telescope operations for
+            microlensing searches and exoplanet characterisation
+            as part of the international MINDSTEp collaboration
+            (Microlensing Network for the Detection of Small
+            Terrestrial Exoplanets), including remote and on-site
+            observing.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                Observational Training · Japal-Rangapur Observatory,
+                India
+            </div>
+
+            <div class="date">2019</div>
+
+        </div>
+
+        <p>
+            Participated in observational training using an 8-inch
+            telescope, including observations of Jupiter and lunar
+            craters.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     PUBLICATIONS
+============================================================= -->
+
+<section id="publications">
+
+    <h2>Publications</h2>
+
+
+    <div class="publication">
+
+        <p>
+            <strong>Rajkumar, A. R.</strong>, Bayo, A., Peng, P.,
+            Tregloan-Reed, J., Southworth, J., Hinse, T. C., et al.
+        </p>
+
+        <p class="publication-title">
+            Long-term monitoring of WASP-19 b:
+            Signs of apsidal precession and molecular signatures
+        </p>
+
+        <p>
+            <em>Astronomy & Astrophysics</em>,
+            708, A313 (2026).
+        </p>
+
+        <a
+            href="https://doi.org/10.1051/0004-6361/202556822"
+            target="_blank">
+            DOI: 10.1051/0004-6361/202556822
+        </a>
+
+    </div>
+
+
+    <div class="publication">
+
+        <p>
+            P. Longa-Peña, M. Dominik, M. J. Burgdorf,
+            et al.
+        </p>
+
+        <p class="publication-title">
+            Brightness evolution of LEO Starlink
+            mega-constellation satellites from 2021 to 2023:
+            A multiyear ground-based photometric study
+        </p>
+
+        <p>
+            <em>Monthly Notices of the Royal Astronomical Society</em>,
+            548(2), stag552 (2026).
+        </p>
+
+        <a
+            href="https://doi.org/10.1093/mnras/stag552"
+            target="_blank">
+            DOI: 10.1093/mnras/stag552
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     AWARDS
+============================================================= -->
+
+<section id="awards">
+
+    <h2>Awards, Grants & Academic Activities</h2>
+
+
+    <div class="entry">
+        <div class="entry-header">
+            <div class="entry-title">
+                National Scholarship · ANID, Chile
+            </div>
+            <div class="date">2023 – 2025</div>
+        </div>
+
+        <p>
+            Doctoral scholarship awarded by Chile's National
+            Agency for Research and Development.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <div class="entry-header">
+            <div class="entry-title">
+                Scientific Assistant · ESO Observing Programme
+                Committee (OPC), P115
+            </div>
+            <div class="date">2024</div>
+        </div>
+
+        <p>Served on three review panels.</p>
+    </div>
+
+
+    <div class="entry">
+        <div class="entry-header">
+            <div class="entry-title">
+                Social Media Manager · INCT-UDA
+            </div>
+            <div class="date">2023 – 2024</div>
+        </div>
+
+        <p>
+            Managed INCT-UDA's social media platforms,
+            highlighting and communicating the institute's
+            achievements.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · Adelina Gutiérrez Beca</strong>
+        <p>
+            CLP 310,000 travel support to attend the XVII Latin
+            American Regional IAU Meeting in Uruguay.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · IAU Grant</strong>
+        <p>
+            EUR 1,200 grant to participate in Complex Planetary
+            Systems II, IAU Symposium 382, Belgium.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · EAS Travel Grant</strong>
+        <p>
+            EUR 700 travel grant to attend the European
+            Astronomical Society Meeting in Poland.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · Sagan Workshop Grant</strong>
+        <p>
+            USD 1,200 accommodation grant to attend the Sagan
+            Exoplanet Summer Workshop in California, USA.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2021 – Present · Rubin Observatory Data Preview Delegate</strong>
+        <p>
+            Data Preview 0 (DP0) delegate for the Vera C. Rubin
+            Observatory in Chile.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2021 – Present · JWST Transiting Exoplanet Community</strong>
+        <p>
+            Member of the James Webb Space Telescope Transiting
+            Exoplanet Community Early Release Science Programme.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2020 · Shortlisted Candidate, IMPRS-HD</strong>
+        <p>
+            Shortlisted for the International Max Planck Research
+            School for Astronomy and Cosmic Physics at Heidelberg
+            University.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2017 · Sir C. V. Raman Award</strong>
+        <p>Award for overall academic performance.</p>
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     WORK EXPERIENCE
+============================================================= -->
+
+<section>
+
+    <h2>Work Experience</h2>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                Mentor · Ambitio
+            </div>
+
+            <div class="date">
+                2026 – Present
+            </div>
+
+        </div>
+
+        <p>
+            Providing academic and research mentorship to students
+            pursuing astronomy and physics, offering guidance on
+            research projects, PhD applications, scientific writing,
+            and interview preparation.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <div class="entry-header">
+
+            <div class="entry-title">
+                Content Writer · Evoplus IT Services
+            </div>
+
+            <div class="date">
+                2018
+            </div>
+
+        </div>
+
+        <p>
+            Worked as a freelance content writer.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     CONFERENCES
+============================================================= -->
+
+<section id="conferences">
+
+    <h2>Selected Conferences & Presentations</h2>
+
+
+    <div class="entry">
+        <strong>2025 · SOCHIAS, Chile</strong>
+        <p>Poster on TTV in the WASP-19 system.</p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2025 · Journal Club, ESO, Garching bei München</strong>
+        <p>Talk on WASP-107 b.</p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2024 · Stellar and Planetary Group, ESO, Garching bei München</strong>
+        <p>Research talk.</p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2024 · XXXII IAU General Assembly, Cape Town, South Africa</strong>
+        <p>
+            Poster presentation; volunteer for the ESO and
+            Astronomical Society of India booths.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2024 · Exoplanets 5, Leiden, Netherlands</strong>
+        <p>Poster presentation.</p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2024 · ICPEH 2024, Ahmedabad, India</strong>
+        <p>
+            Talk on the orbital decay of WASP-19 b and a poster
+            on astrobiology.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · Sagan Exoplanet Summer Workshop, California, USA</strong>
+        <p>
+            Poster presentation and helper for a hands-on session
+            on petitRADTRANS retrievals.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · XVIII SOCHIAS Meeting, Chile</strong>
+        <p>Paper presentation on WASP-19 b.</p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2023 · 41st ASI Meeting, India</strong>
+        <p>
+            Paper presentation on clouds and hazes in inflated
+            hot Jupiters.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2022 · VLTI-HOW Workshop, ESO Vitacura, Chile</strong>
+        <p>Poster and group presentations.</p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2018 · International Capsule Workshop: Life in Space</strong>
+        <p>
+            Participated in a workshop organised by the Indian
+            Astrobiology Research Centre.
+        </p>
+    </div>
+
+
+    <div class="entry">
+        <strong>2016 · World Space Week</strong>
+        <p>
+            Participated in the programme organised by Satish
+            Dhawan Space Centre SHAR, India.
+        </p>
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     OUTREACH
+============================================================= -->
+
+<section id="outreach">
+
+    <h2>Outreach Activities</h2>
+
+
+    <div class="entry">
+
+        <strong>
+            2026 · Guest STEM Speaker · Lake View Global School,
+            Chennai, India
+        </strong>
+
+        <p>
+            Presented an introductory talk on
+            “Basics of Astronomy: Earth & Beyond” to middle-school
+            students and encouraged students to pursue STEM careers.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2025 · Guest STEM Speaker · Dr. M.G.R. University,
+            Chennai, India
+        </strong>
+
+        <p>
+            Presented a research talk on “Exoplanets and Habitability”
+            to undergraduate and master's students and encouraged
+            students to pursue STEM careers.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2025 · Festival de las Ciencias · Copiapó, Chile
+        </strong>
+
+        <p>
+            Hosted a public outreach stall demonstrating fundamental
+            concepts in astronomy and astrobiology through interactive
+            experiments.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2024 · ESO ELT Camp · Germany
+        </strong>
+
+        <p>
+            Delivered an introductory talk on ELT instruments and
+            their applications for investigating exoplanetary
+            atmospheres.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2023 · Observatorio Andrómeda · Copiapó, Chile
+        </strong>
+
+        <p>
+            Led public telescope nights and astronomy sessions and
+            delivered science storytelling activities for school
+            groups and families. The activity was featured in the
+            local newspaper <em>Diario</em>.
+        </p>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2023 · Observatorio Andrómeda · Copiapó, Chile
+        </strong>
+
+        <p>
+            Presented a public astronomy talk about the Moon.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     INTERVIEWS
+============================================================= -->
+
+<section>
+
+    <h2>Interviews</h2>
+
+
+    <div class="entry">
+
+        <strong>
+            2025 ·
+            <a href="https://studyinternational.com/news/day-in-the-life-phd-in-astronomy-chile/"
+               target="_blank"
+               rel="noopener noreferrer">
+                A Day in the Life of a PhD in Astronomy Student in the Best Country to Pursue This Subject
+            </a>
+        </strong>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2025 ·
+            <a href="https://studyinternational.com/news/astronomy-degree-phd-anitha-raj/"
+               target="_blank"
+               rel="noopener noreferrer">
+                The Best Country to Earn an Astronomy Degree Is Not What You'd Expect
+            </a>
+        </strong>
+
+    </div>
+
+
+    <div class="entry">
+
+        <strong>
+            2021 ·
+            <a href="https://www.youtube.com/watch?v=XYxGCoyvsU0&t=2s"
+               target="_blank"
+               rel="noopener noreferrer">
+                Women in Science · PAR Explora Atacama
+            </a>
+        </strong>
+
+    </div>
+
+</section>
+
+
+<!-- =============================================================
+     TECHNICAL SKILLS
+============================================================= -->
+
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+
+        <span>Python</span>
+
+        <span>Astropy</span>
+
+        <span>NumPy</span>
+
+        <span>Pandas</span>
+
+        <span>Lightkurve</span>
+
+        <span>emcee</span>
+
+        <span>MATLAB</span>
+
+        <span>IDL</span>
+
+        <span>LaTeX</span>
+
+        <span>TOPCAT</span>
+
+        <span>JWST Pipelines</span>
+
+        <span>Bayesian Retrievals</span>
+
+        <span>Photometry</span>
+
+        <span>Machine Learning</span>
+
+        <span>Nonlinear Time-Series Analysis</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============================================================
+     LANGUAGES
+============================================================= -->
+
+<section>
+
+    <h2>Languages</h2>
+
+    <div class="skills">
+
+        <span>English</span>
+
+        <span>Tamil</span>
+
+        <span>Spanish</span>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =============================================================
+     FOOTER
+============================================================= -->
 
 <footer>
-  <p>© 2026 Anitha Raj Rajkumar</p>
+
+    <p>
+        © 2026 Dr. Anitha Raj Rajkumar
+    </p>
+
+    <p>
+        Astronomy · Exoplanets · Time-Domain Astrophysics
+    </p>
+
 </footer>
 
+
 </body>
+
 </html>
